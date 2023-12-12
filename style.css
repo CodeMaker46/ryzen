@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@font-face {
+    font-family: klavikaMedium;
+    src: url(/Klavika/klavika-medium.otf);
+}
+@font-face {
+    font-family: klavikalite;
+    src: url(/Klavika/klavika-light.otf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.container{
+    max-width: 1750px;
+    margin-inline: 61px;
+}
+
+.b-black{
+    background-color: black;
+    max-width: 100vw;
+    color: white;
+}
+
+.b-white{
+    background-color: white;
+    max-width: 100vw;
+    color: black;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+h1{
+    margin-top: 4px;
+    font-family: klavikaMedium;
+    padding-bottom: 22px;
+    font-weight: 300;
+    transform: scaleY(1.26);
+    padding: 1.8px 0 2.05% 0;
+    line-height: 32px;
+    font-size: 2rem;    
+}
+h2{
+    margin-top: 14px;
+    font-family: klavikaMedium;
+    padding-bottom: 20px;
+    font-weight: 300;
+    transform: scaleY(1.26);
+    padding:4px 0 2.05% 0;
+    line-height: 32px;
+    font-size: 1.45rem;    
+}
+h3{
+    margin-top: 4px;
+    font-family: klavikalite;
+    padding-bottom: 20px;
+    font-weight: 300;
+    transform: scaleY(1.29);
+    padding: 1.8px 0 1% 0;
+    line-height: 32px;
+    font-size: 1.3rem;    
+}
+
+.format-para p{
+    font-family: klavikalite;
+    font-size: 22px;
+    letter-spacing: -1px;
+    transform: scaleY(1.1);
+    padding-bottom: 20px;
+    line-height: 28px;
+}
+
+p{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+
+}
+
+
+
+.primary-button{
+    border: 2px solid white;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 11px 42px 11px 42px; /*top right bottom left*/
+    font-weight:bolder;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 0.95rem;
+    color: white;
+}
+
+.primary-button:hover{
+    border: 2px solid black;
+    background-color: rgb(76, 74, 74);
+}
+
+.highlight a{
+    color: #00ffff;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+sup{
+    font-size: 0.8rem;
+}
+
+/* nav bar */
+
+.companylogo img{
+    width: 100px;
+}
+
+.main-nav{
+    justify-content: space-between;
+    position: relative;
+    height: 90px;
+}
+
+.nav-links{
+    justify-content: start;
+    font-family: 'Noto Sans', sans-serif;
+    flex-basis: 915px;
+}
+
+.nav-links ul{
+    justify-content: start;
+    gap: 56px;
+    padding-bottom: 8px;
+}
+
+.hover-link a::after{
+    content: "";
+    width: 0;
+    height: 1.5px;
+    background-color: white;
+    margin: auto;
+    display: block;
+    transition: 0.2s linear;
+}
+
+/* content proprty is used after the pseudo elements like 
+:before & :after to add anything */
+
+.hover-link a:hover::after{
+    width: 100%;
+}
+
+.icons{
+    margin-right: 18px;
+}
+.icons ul{
+    padding-top: 32px;
+    padding-bottom: 42px;
+    gap: 50px;
+    justify-content: end;
+    justify-content: space-evenly;
+}
+
+/* header */
+
+
+header h1{
+    color: black;
+    font-family: klavikaMedium;
+    font-weight: 580;
+    font-size: 24px;
+    transform: scaleY(1.3);
+    position: relative;
+    padding: 35px 0 35px 0;
+}
+
+/* after header */
+
+.after-header{
+    background-color: black;
+    width: 100vw;
+    gap: 20px;
+    justify-content: start;
+    background-size: cover;
+}
+
+.after-header-left{
+    width: 45vw;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-top: 50px;
+    
+}
+
+.after-header-right img{
+    width: 665px;
+    align-items: flex-start;
+    margin-left: 8px;
+}
+
+.image img{
+    padding-bottom: 30px;
+}
+
+.after-header-left a{
+    margin-bottom: 32px;
+    font-size: 15px;
+}
+
+/* dynamic header */
+.sticky-head{
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+}
+.headings{
+    justify-content: center;
+    padding: 2.75% 24.5% 2.75% 24.5%;
+}
+.headings ul{
+    list-style: none;
+    gap: 26px;
+
+}
+
+.heading-links a{
+    color: black;
+    font-size: 14px;
+    font-weight: bolder;
+    font-family: 'Noto Sans', sans-serif;
+    text-decoration: underline;
+    letter-spacing: 0.3px;
+}
+
+
+/*     ryzen 7000-1  */
+
+.ryzen-7000-1{
+    justify-content: center;
+    gap: 11px;
+    
+}
+.yt-video{
+    width:666px;
+    height: 375px;
+}
+.ryzen-7000-1-left{
+    padding: 2px; 
+}
+.ryzen-7000-1-right {
+    padding: 3.2% 1.3% ;
+}
+
+/*     ryzen 7000-2  */
+
+.ryzen-7000-2{
+    justify-content: center;
+    gap: 28px;
+    
+}
+/* .ryzen-7000-2-right h1{
+    padding: 1% 0 1.6% 0;
+    line-height: 32px; 
+} */
+
+
+.ryzen-7000-2-left img{
+    width: 684px;
+}
+
+/* technologies */
+
+.technologies{
+    justify-content: center;
+    gap: 12px;
+}
+.technologies-right {
+    padding: 3.09% 1.3% ;
+}
+.technologies-right img{
+    width: 900px;
+}
+
+/* expo */
+
+.expo-1{
+    justify-content: center;   
+    gap: 30px;
+}
+.expo-1-right p{
+    font-family: klavikalite;
+    font-size: 22px;
+    letter-spacing: -1px;
+    transform: scaleY(1.2);
+    padding-bottom: 50px;
+    line-height: 28px;
+}
+.expo-1-left img{
+    width: 450px; 
+    height: 250px;   
+}
+
+.expo-2{
+    gap: 29px;
+    justify-content: center;
+    align-items: flex-start;
+    height: 580px;
+    padding-top: 95px;
+
+}
+.box{
+    flex-direction: column;
+}
+.box-image img{
+    width: 447px;
+}
+
+/* am5 */
+.am5{
+    justify-content: center;
+    margin-top: 10px;
+    margin-right:  75px;
+    gap: 30px;
+}
+.am5-left h3{
+    margin-top: 12px;
+    margin-bottom: 18px;
+    line-height: 24px;
+}
+.am5-left a{
+    padding: 11px 14px 11px 14px;
+    
+}
+.am5-left p{
+    margin-bottom: 40px;
+    
+}
+.am5-right img{
+    width: 900px;
+}
+
+/* performance */
+
+.performance-1{
+    margin: 72px 0 72px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.performance-1-text{
+    text-align: center;
+}
+.performance-1-text h1{
+    padding: 0 0 0 0;
+}
+
+.performance-1-photo img{
+    display: block;
+    width: 1170px;       
+}
+.performance-2{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.performance-2-text{
+    text-align: center;
+}
+.performance-2-text h1{
+    padding: 0 0 0 0;
+}
+.performance-2-photo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    margin-top: 10px;      
+}
+
+.performance-3{
+    gap: 30px;
+    margin-top: 50px;
+    justify-content: center;
+}
+.performance-3-left img{
+    width: 685px;
+}
+
+.performance-3-right p{
+    padding: 10px 0 48px 0;    
+}
+
+/* platform */
+
+.platform-1{
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 95px;
+    justify-content: space-evenly;
+}
+
+.platform-2{
+    gap: 13px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.platform-2-left{
+    padding-top: 0px;
+}
+.platform-2-left img{
+    width: 690px;
+}
+
+.platform-2-right{  
+    padding: 4px 0 0 13px;
+}
+.platform-2-right h1{
+    padding-bottom: 10px;
+}
+.platform-2-right p{
+    margin-bottom: 40px; 
+}
+.platform-3{
+    justify-content: center;
+    margin: 17px 129px 17px 114px;
+    gap: 40px;
+    max-width: 100%;
+    padding-bottom: 13px;
+
+}
+.platform-3-left {
+    margin-top: -17px;
+}
+.small-para{
+    line-height: 20px;
+    font-size: 8.5px;
+    margin: 10px 0 40px 0;
+}
+.platform-3-right img{
+    width: 750px;
+}
+
+/* specifications */
+
+.specifications-1{
+    color: black;
+    justify-content: center;
+    text-align: center;
+    padding-top: 55px;
+    padding-right: 2px;
+    max-width: 100vw;
+}
+.specifications-1 h1{
+    padding: 0 0 0 0;
+}
+.specifications-1 h2{
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+/*specifications-1 table*/
+.table-content{
+    border-collapse: collapse;
+    margin: 0 0 50px 40px;
+    text-align: left;
+    overflow: hidden;
+    justify-content: center;
+}
+.table-content a{
+    color: #3366CC;
+}
+thead{
+    overflow-y: auto;
+    margin-right: 10px;
+}
+
+thead th{
+    padding: 0 5px 0 7px;
+    justify-content: center;
+   
+}
+.right-shift{
+    text-align: right;
+}
+td{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    padding: 7px 7px 7px 7px;
+}
+
+tbody tr:nth-of-type(odd)
+{
+    background-color: #f9f9f9;
+}
+
+/* specifications 2 */
+.specifications-2{
+    gap: 30px;
+    padding-bottom: 15px;
+}
+.specifications-2-left img{
+    width: 450px;
+    margin-top: 13px;
+}
+.specifications-2-right h1{
+    margin-top: 16px;
+    padding-bottom: 12px;
+}
+.specifications-2-right h3{
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+.specifications-2-right p{
+    margin-bottom: 40px;
+}
+
+/* specifications-3 table */
+
+.specifications-3-head{
+    justify-content: center;
+}
+
+/* footnotes */
+
