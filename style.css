@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 @font-face {
     font-family: klavikaMedium;
-    src: url(/Klavika/klavika-medium.otf);
+    src: url(./klavika-medium.otf);
 }
 @font-face {
     font-family: klavikalite;
-    src: url(/Klavika/klavika-light.otf);
+    src: url(./klavika-light.otf);
 }
 *{
     padding: 0;
